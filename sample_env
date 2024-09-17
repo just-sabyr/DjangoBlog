@@ -1,0 +1,8 @@
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'admin@gmail.com'
+EMAIL_HOST_PASSWORD = 'xxxx xxxx xxxx xxxx'
+DEFAULT_FROM_EMAIL = 'My Blog <admin@gmail.com>'
+DB_NAME=blog
+DB_USER=blog
+DB_PASSWORD=xxxxx
+DB_HOST=localhost

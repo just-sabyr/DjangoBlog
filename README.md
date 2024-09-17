@@ -26,7 +26,7 @@ Taken from the book Django5 by Example
     docker start blog_db
 ```
 
-# Create .env file and Store your sensitive env variables (secrets) there (example file is env)
+# Create .env file and Store your sensitive env variables (secrets) there (example file is sample_env)
 ```bash
     touch .env
 ```
