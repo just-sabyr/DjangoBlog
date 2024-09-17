@@ -1,41 +1,45 @@
 # Web Blog using Django 5
 Taken from the book Django5 by Example
 
+# VideoDemo
+-- TODO: make a demo video (a gif maybe)
 
-# Requirements
+# How to use this project
+
+## Requirements
 Install docker, python (3.10.x) (tested on 3.10.12), 
 
-# Create a python Virtual Environment (using venv)  
+## Create a python Virtual Environment (using venv)  
 ```bash
     python3 -m venv venv
 ```
 
-# Clone the repository
+## Clone the repository
 ```bash
     git clone https://github.com/just-sabyr/DjangoBlog.git
 ```
 
-# Go to the project directory
+## Go to the project directory
 ```bash
     cd DjangoBlog
 ```
 
-# Activate the venv
+## Activate the venv
 ```bash
     source ../venv/bin/activate
 ```
 
-# Install the required Python libraries (locally into the venv)
+## Install the required Python libraries (locally into the venv)
 ```bash
     python -m pip install requirements.py
 ```
 
-# Install PostgreSQL docker image
+## Install PostgreSQL docker image
 ```bash
     docker pull postgres:16.2
 ```
 
-# Start the PostgreSQL Server 
+## Start the PostgreSQL Server 
     - RUN this if for the first time
 ```bash
     docker run --name=blog_db -e POSRGRES_DB=blog -e POSTGRES_USER=blog -e POSTGRES_PASSWORD=xxxxx -p 5432:5432 -d postgres:16.2
@@ -45,18 +49,19 @@ Install docker, python (3.10.x) (tested on 3.10.12),
     docker start blog_db
 ```
 
-# Create .env file and Store your sensitive env variables (secrets) there (example file is sample_env)
+## Create .env file and Store your sensitive env variables (secrets) there (example file is sample_env)
 ```bash
     touch .env
 ```
 
-# Make migrations & migrate
+## Make migrations & migrate
 ```bash
     python manage.py makemigrations
     python manage.py migrate
 ```
 
-# Load sample data from a fixture 
+## Load sample data from a fixture 
 ```bash
     python manage.py loaddata mysite_data.json
 ```
+
